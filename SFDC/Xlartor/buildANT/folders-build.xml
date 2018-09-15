@@ -1,0 +1,19 @@
+<project xmlns:sf='antlib:com.salesforce' default='bulkRetrieveFolders'>
+  <import file='../ant-includes/setup-target.xml' />
+  <target name='bulkRetrieveFolders' depends='-setUpMetadataDir'>
+    <parallel threadCount='4'>
+      <sf:retrieve unpackaged='buildANT/folders-package.xml' retrieveTarget='${build.metadata.dir}' username='${sf.username}' password='${sf.password}' serverurl='${sf.serverurl}' pollWaitMillis='${sf.pollWaitMillis}' maxPoll='${sf.maxPoll}' />
+      <sf:bulkRetrieve metadataType='Document' containingFolder='Communities_Shared_Document_Folder' retrieveTarget='${build.metadata.dir}' username='${sf.username}' password='${sf.password}' serverurl='${sf.serverurl}' pollWaitMillis='${sf.pollWaitMillis}' maxPoll='${sf.maxPoll}' />
+      <sf:bulkRetrieve metadataType='Document' containingFolder='Communities_Shared_Document_Folder1' retrieveTarget='${build.metadata.dir}' username='${sf.username}' password='${sf.password}' serverurl='${sf.serverurl}' pollWaitMillis='${sf.pollWaitMillis}' maxPoll='${sf.maxPoll}' />
+      <sf:bulkRetrieve metadataType='Document' containingFolder='SharedDocuments' retrieveTarget='${build.metadata.dir}' username='${sf.username}' password='${sf.password}' serverurl='${sf.serverurl}' pollWaitMillis='${sf.pollWaitMillis}' maxPoll='${sf.maxPoll}' />
+      <sf:bulkRetrieve metadataType='EmailTemplate' containingFolder='FSCEmailTemplates' retrieveTarget='${build.metadata.dir}' username='${sf.username}' password='${sf.password}' serverurl='${sf.serverurl}' pollWaitMillis='${sf.pollWaitMillis}' maxPoll='${sf.maxPoll}' />
+      <sf:bulkRetrieve metadataType='Report' containingFolder='Barclays_Report_Folder' retrieveTarget='${build.metadata.dir}' username='${sf.username}' password='${sf.password}' serverurl='${sf.serverurl}' pollWaitMillis='${sf.pollWaitMillis}' maxPoll='${sf.maxPoll}' />
+      <sf:bulkRetrieve metadataType='Report' containingFolder='FinServ__Advisor_Reports' retrieveTarget='${build.metadata.dir}' username='${sf.username}' password='${sf.password}' serverurl='${sf.serverurl}' pollWaitMillis='${sf.pollWaitMillis}' maxPoll='${sf.maxPoll}' />
+      <sf:bulkRetrieve metadataType='Report' containingFolder='FinServ__MyTopReferrers' retrieveTarget='${build.metadata.dir}' username='${sf.username}' password='${sf.password}' serverurl='${sf.serverurl}' pollWaitMillis='${sf.pollWaitMillis}' maxPoll='${sf.maxPoll}' />
+      <sf:bulkRetrieve metadataType='Report' containingFolder='FinServ__ReferralPerformance' retrieveTarget='${build.metadata.dir}' username='${sf.username}' password='${sf.password}' serverurl='${sf.serverurl}' pollWaitMillis='${sf.pollWaitMillis}' maxPoll='${sf.maxPoll}' />
+      <sf:bulkRetrieve metadataType='Dashboard' containingFolder='CompanyDashboards' retrieveTarget='${build.metadata.dir}' username='${sf.username}' password='${sf.password}' serverurl='${sf.serverurl}' pollWaitMillis='${sf.pollWaitMillis}' maxPoll='${sf.maxPoll}' />
+      <sf:bulkRetrieve metadataType='Dashboard' containingFolder='Referral_Dashboards' retrieveTarget='${build.metadata.dir}' username='${sf.username}' password='${sf.password}' serverurl='${sf.serverurl}' pollWaitMillis='${sf.pollWaitMillis}' maxPoll='${sf.maxPoll}' />
+      <sf:bulkRetrieve metadataType='Dashboard' containingFolder='FinServ__Public_Dashboards' retrieveTarget='${build.metadata.dir}' username='${sf.username}' password='${sf.password}' serverurl='${sf.serverurl}' pollWaitMillis='${sf.pollWaitMillis}' maxPoll='${sf.maxPoll}' />
+    </parallel>
+  </target>
+</project>

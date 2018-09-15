@@ -1,0 +1,39 @@
+<project xmlns:sf='antlib:com.salesforce' default='profilesPackageRetrieve'>
+  <import file='../ant-includes/setup-target.xml' />
+  <target name='profilesPackageRetrieve' depends='-setUpMetadataDir'>
+    <parallel threadCount='4'>
+      <sequential>
+        <mkdir dir='buildANT/profile-packages-metadata/ApexClass' />
+        <sf:retrieve unpackaged='buildANT/profile-packages/ApexClass.xml' retrieveTarget='buildANT/profile-packages-metadata/ApexClass' username='${sf.username}' password='${sf.password}' serverurl='${sf.serverurl}' pollWaitMillis='${sf.pollWaitMillis}' maxPoll='${sf.maxPoll}' />
+      </sequential>
+      <sequential>
+        <mkdir dir='buildANT/profile-packages-metadata/ApexPage' />
+        <sf:retrieve unpackaged='buildANT/profile-packages/ApexPage.xml' retrieveTarget='buildANT/profile-packages-metadata/ApexPage' username='${sf.username}' password='${sf.password}' serverurl='${sf.serverurl}' pollWaitMillis='${sf.pollWaitMillis}' maxPoll='${sf.maxPoll}' />
+      </sequential>
+      <sequential>
+        <mkdir dir='buildANT/profile-packages-metadata/CustomApplication' />
+        <sf:retrieve unpackaged='buildANT/profile-packages/CustomApplication.xml' retrieveTarget='buildANT/profile-packages-metadata/CustomApplication' username='${sf.username}' password='${sf.password}' serverurl='${sf.serverurl}' pollWaitMillis='${sf.pollWaitMillis}' maxPoll='${sf.maxPoll}' />
+      </sequential>
+      <sequential>
+        <mkdir dir='buildANT/profile-packages-metadata/CustomObjectTranslation' />
+        <sf:retrieve unpackaged='buildANT/profile-packages/CustomObjectTranslation.xml' retrieveTarget='buildANT/profile-packages-metadata/CustomObjectTranslation' username='${sf.username}' password='${sf.password}' serverurl='${sf.serverurl}' pollWaitMillis='${sf.pollWaitMillis}' maxPoll='${sf.maxPoll}' />
+      </sequential>
+      <sequential>
+        <mkdir dir='buildANT/profile-packages-metadata/CustomObject' />
+        <sf:retrieve unpackaged='buildANT/profile-packages/CustomObject.xml' retrieveTarget='buildANT/profile-packages-metadata/CustomObject' username='${sf.username}' password='${sf.password}' serverurl='${sf.serverurl}' pollWaitMillis='${sf.pollWaitMillis}' maxPoll='${sf.maxPoll}' />
+      </sequential>
+      <sequential>
+        <mkdir dir='buildANT/profile-packages-metadata/CustomPermission' />
+        <sf:retrieve unpackaged='buildANT/profile-packages/CustomPermission.xml' retrieveTarget='buildANT/profile-packages-metadata/CustomPermission' username='${sf.username}' password='${sf.password}' serverurl='${sf.serverurl}' pollWaitMillis='${sf.pollWaitMillis}' maxPoll='${sf.maxPoll}' />
+      </sequential>
+      <sequential>
+        <mkdir dir='buildANT/profile-packages-metadata/Layout' />
+        <sf:retrieve unpackaged='buildANT/profile-packages/Layout.xml' retrieveTarget='buildANT/profile-packages-metadata/Layout' username='${sf.username}' password='${sf.password}' serverurl='${sf.serverurl}' pollWaitMillis='${sf.pollWaitMillis}' maxPoll='${sf.maxPoll}' />
+      </sequential>
+      <sequential>
+        <mkdir dir='buildANT/profile-packages-metadata/CustomTab' />
+        <sf:retrieve unpackaged='buildANT/profile-packages/CustomTab.xml' retrieveTarget='buildANT/profile-packages-metadata/CustomTab' username='${sf.username}' password='${sf.password}' serverurl='${sf.serverurl}' pollWaitMillis='${sf.pollWaitMillis}' maxPoll='${sf.maxPoll}' />
+      </sequential>
+    </parallel>
+  </target>
+</project>

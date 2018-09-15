@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?><Package xmlns="http://soap.sforce.com/2006/04/metadata">
+  <types>
+    <members>Account-Account Layout</members>
+    <members>AccountBrand-Account BrandLayout</members>
+    <members>AccountContactRelation-Account Contact Relationship Layout</members>
+    <members>Asset-Asset Layout</members>
+    <members>AssetRelationship-Asset Relationship Layout</members>
+    <members>Campaign-Campaign Layout</members>
+    <members>CampaignMember-Campaign Member Page Layout</members>
+    <members>Case-Case Layout</members>
+    <members>CaseClose-Close Case Layout</members>
+    <members>ChannelProgram-Channel Program Layout</members>
+    <members>ChannelProgramLevel-Channel Program Level Layout</members>
+    <members>ChannelProgramMember-Channel Program Member Layout</members>
+    <members>Contact-Contact Layout</members>
+    <members>ContentVersion-Content Version Layout</members>
+    <members>Contract-Contract Layout</members>
+    <members>DuplicateRecordSet-Duplicate Record Set Layout</members>
+    <members>EmailMessage-Email Message Layout</members>
+    <members>Event-Event Layout</members>
+    <members>FeedItem-Feed Item Layout</members>
+    <members>Global-Advisor Publisher Layout</members>
+    <members>Global-Global Layout</members>
+    <members>Idea-Idea Layout</members>
+    <members>Lead-Lead Layout</members>
+    <members>Loan_Repayment__c-Loan Repayment Layout</members>
+    <members>Macro-Macro Layout</members>
+    <members>Opportunity-Opportunity Layout</members>
+    <members>OpportunityLineItem-Opportunity Product Layout</members>
+    <members>Order-Order Layout</members>
+    <members>OrderItem-Order Product Layout</members>
+    <members>PartnerFundAllocation-Partner Fund Allocation Layout</members>
+    <members>PartnerFundClaim-Partner Fund Claim Layout</members>
+    <members>PartnerFundRequest-Partner Fund Request Layout</members>
+    <members>PartnerMarketingBudget-Partner Marketing Budget Layout</members>
+    <members>Pricebook2-Price Book Layout</members>
+    <members>PricebookEntry-Price Book Entry</members>
+    <members>Product2-Product Layout</members>
+    <members>ProfileSkill-Skill Layout</members>
+    <members>ProfileSkillEndorsement-Endorsement Layout</members>
+    <members>ProfileSkillUser-Skill User Layout</members>
+    <members>QuickText-Quick Text Layout</members>
+    <members>Repayment_Pattern__c-Repayment Pattern Layout</members>
+    <members>SOSSession-SOS Session Layout</members>
+    <members>SOSSessionActivity-SOS Session Activity Layout</members>
+    <members>Scorecard-Scorecard Layout</members>
+    <members>ScorecardAssociation-Scorecard Association Layout</members>
+    <members>ScorecardMetric-Scorecard Metric Layout</members>
+    <members>SocialPersona-Social Persona Layout</members>
+    <members>SocialPost-Social Post Layout</members>
+    <members>Solution-Solution Layout</members>
+    <members>Task-Task Layout</members>
+    <members>Transaction__c-Merchant Transaction Layout</members>
+    <members>Transaction__c-Transaction Layout</members>
+    <members>User-User Layout</members>
+    <members>UserProvAccount-User Provisioning Account Layout</members>
+    <members>UserProvisioningLog-User Provisioning Log Layout</members>
+    <members>UserProvisioningRequest-User Provisioning Request Layout</members>
+    <members>WorkAccess-Access Layout</members>
+    <members>WorkBadge-Badge Received Layout</members>
+    <members>WorkBadgeDefinition-Badge Layout</members>
+    <members>WorkOrder-Work Order Layout</members>
+    <members>WorkOrderLineItem-Work Order Line Item Layout</members>
+    <members>WorkThanks-Thanks Layout</members>
+    <members>Account-FinServ__Account %28Business%29 Layout</members>
+    <members>Account-FinServ__Account %28Household%29 Layout</members>
+    <members>Account-FinServ__Account %28Individual%29 Layout</members>
+    <members>Account-FinServ__Account %28Institution%29 Layout</members>
+    <members>Account-FinServ__Account %28Policyholder%29 Layout</members>
+    <members>Account-FinServ__Account %28Retail Client -FinServ__ Individual%29 Layout</members>
+    <members>AccountContactRelation-FinServ__Account Contact Relationship Layout</members>
+    <members>Case-FinServ__Case %28FSC%29 Layout</members>
+    <members>Contact-FinServ__Contact %28Business%29 Layout</members>
+    <members>Contact-FinServ__Contact %28Individual%29 Layout</members>
+    <members>Contact-FinServ__Contact %28Policyholder%29 Layout</members>
+    <members>Contact-FinServ__Contact %28Retail Client -FinServ__ Individual%29 Layout</members>
+    <members>Event-FinServ__Wealth Events</members>
+    <members>FinServ__AccountAccountRelation__c-FinServ__Account Account Relation Layout</members>
+    <members>FinServ__AccountAccountRelation__c-FinServ__Account-FinServ__Account Relationship Layout</members>
+    <members>FinServ__Alert__c-FinServ__Alert Layout</members>
+    <members>FinServ__AssetsAndLiabilities__c-FinServ__Assets and Liabilities Layout</members>
+    <members>FinServ__B2CLeadToOpportunityMapping__mdt-FinServ__B2CLeadToOpportunityMapping Layout</members>
+    <members>FinServ__BillingStatement__c-FinServ__Credit Billing Statement Layout</members>
+    <members>FinServ__BillingStatement__c-FinServ__Debit Billing Statement Layout</members>
+    <members>FinServ__Card__c-FinServ__Card Layout</members>
+    <members>FinServ__ChargesAndFees__c-FinServ__ChargesAndFees Credit Layout</members>
+    <members>FinServ__ChargesAndFees__c-FinServ__ChargesAndFees Debit Layout</members>
+    <members>FinServ__ContactContactRelation__c-FinServ__Contact Contact Relation Layout</members>
+    <members>FinServ__ContactContactRelation__c-FinServ__Contact-FinServ__Contact Relationship Layout</members>
+    <members>FinServ__CustomFieldSet__mdt-FinServ__CustomFieldSet Layout</members>
+    <members>FinServ__CustomLabelConf__mdt-FinServ__CustomLabelConf Layout</members>
+    <members>FinServ__DialogLookUpConfig__mdt-FinServ__DialogLookUpConfig Layout</members>
+    <members>FinServ__Education__c-FinServ__Education Layout</members>
+    <members>FinServ__Employment__c-FinServ__Employment Layout</members>
+    <members>FinServ__FeatureServiceMapping__mdt-FinServ__Feature Service Mapping Layout</members>
+    <members>FinServ__FeatureToggle__mdt-FinServ__Feature Toggle Layout</members>
+    <members>FinServ__FinancialAccountRole__c-FinServ__Account Role Layout</members>
+    <members>FinServ__FinancialAccountRole__c-FinServ__Contact Role Layout</members>
+    <members>FinServ__FinancialAccountTransaction__c-FinServ__Financial Account Transaction Layout</members>
+    <members>FinServ__FinancialAccount__c-FinServ__Financial Account %28Auto Loan%29 Layout</members>
+    <members>FinServ__FinancialAccount__c-FinServ__Financial Account %28Banking%29 Layout</members>
+    <members>FinServ__FinancialAccount__c-FinServ__Financial Account %28Checking Account%29 Layout</members>
+    <members>FinServ__FinancialAccount__c-FinServ__Financial Account %28Credit Card%29 Layout</members>
+    <members>FinServ__FinancialAccount__c-FinServ__Financial Account %28General%29 Layout</members>
+    <members>FinServ__FinancialAccount__c-FinServ__Financial Account %28HELOC%29 Layout</members>
+    <members>FinServ__FinancialAccount__c-FinServ__Financial Account %28Insurance%29 Layout</members>
+    <members>FinServ__FinancialAccount__c-FinServ__Financial Account %28Investment%29 Layout</members>
+    <members>FinServ__FinancialAccount__c-FinServ__Financial Account %28Loan Account%29 Layout</members>
+    <members>FinServ__FinancialAccount__c-FinServ__Financial Account %28Mortgage%29 Layout</members>
+    <members>FinServ__FinancialAccount__c-FinServ__Financial Account %28Savings Account%29 Layout</members>
+    <members>FinServ__FinancialGoal__c-FinServ__Financial Goal Layout</members>
+    <members>FinServ__FinancialHolding__c-FinServ__Financial Holding Layout</members>
+    <members>FinServ__GroupRecordTypeMapper__mdt-FinServ__Group Record Type Mapper Layout</members>
+    <members>FinServ__IdentificationDocument__c-FinServ__Identification Document Layout</members>
+    <members>FinServ__IndividualRecordTypeMapper__mdt-FinServ__Record Type Mapper Layout</members>
+    <members>FinServ__InteractionFieldUpdate__mdt-FinServ__InteractionFieldUpdate Layout</members>
+    <members>FinServ__JobFlowSetting__mdt-FinServ__Job Flow Setting Layout</members>
+    <members>FinServ__LicenseKeyMapping__mdt-FinServ__License Key Mapping Layout</members>
+    <members>FinServ__LifeEvent__c-FinServ__Life Event Layout</members>
+    <members>FinServ__LookupSearchConf__mdt-FinServ__LookupSearchConf Layout</members>
+    <members>FinServ__ReciprocalRole__c-FinServ__Reciprocal Role Layout</members>
+    <members>FinServ__Revenue__c-FinServ__Revenue Layout</members>
+    <members>FinServ__RoleEntityMapping__mdt-FinServ__RoleEntityMapping Layout</members>
+    <members>FinServ__RollupByLookupConfig__c-FinServ__RollupByLookupConfig Layout</members>
+    <members>FinServ__RollupByLookupFilterCriteria__c-FinServ__RollupByLookupCriteria Layout</members>
+    <members>FinServ__Securities__c-FinServ__Securities Layout</members>
+    <members>Global-FinServ__RB Global Layout</members>
+    <members>Lead-FinServ__Lead %28General%29 Layout</members>
+    <members>Lead-FinServ__Lead %28Referral%29 Layout</members>
+    <members>Opportunity-FinServ__Opportunity %28General%29 Layout</members>
+    <members>Opportunity-FinServ__Opportunity %28Wallet Share%29 Layout</members>
+    <members>Task-FinServ__Wealth Tasks</members>
+    <name>Layout</name>
+  </types>
+  <types>
+    <members>*</members>
+    <name>Profile</name>
+  </types>
+  <types>
+    <members>*</members>
+    <name>PermissionSet</name>
+  </types>
+  <types>
+    <members>*</members>
+    <name>RecordType</name>
+  </types>
+  <version>39.0</version>
+</Package>

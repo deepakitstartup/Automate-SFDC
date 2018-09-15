@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="AnchorPane" prefHeight="236.0" prefWidth="536.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adoa.FXMLDocumentController">
+    <children>
+      <MenuBar layoutX="4.0" layoutY="6.0" prefHeight="25.0" prefWidth="356.0">
+        <menus>
+          <Menu fx:id="FM" mnemonicParsing="false" text="Fetch Metadata">
+            <items>
+              <MenuItem fx:id="allFM" mnemonicParsing="false" onAction="#displayAll" text="All" />
+              <MenuItem fx:id="packageFM" mnemonicParsing="false" text="Package" />
+               <MenuItem fx:id="projectFM" mnemonicParsing="false" text="Project.xml" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Compare Metadata">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Compare Folders" />
+                  <MenuItem mnemonicParsing="false" text="Compare Files" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Migrate">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Git Repository" />
+                  <MenuItem mnemonicParsing="false" text="Sandbox Deploy" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <TextArea disable="true" layoutX="97.0" layoutY="45.0" prefHeight="186.0" prefWidth="408.0" scrollLeft="40.0" scrollTop="50.0" style="-fx-background-color: #4169e1;" text="WELCOME TO ADOA -New Avtar" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<!-- <meta charset="ISO-8859-1"> -->
+<title>Lightning OUT POC </title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- <script src="https://anzdemo--anzdev.cs20.my.salesforce.com/lightning/lightning.out.js"/> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+function loadLightning(){
+console.log("javascript is working");
+alert("Calling Salesforce");
+var url="https://anzdemo--anzdev.cs20.my.salesforce.com";
+var token="00Dm0000000DKOF!AQUAQPMiqe6MczozCmJwpxMOmEt5aDy4iaD96fpCARF_yOmVr0fCYjcrXF26bjHvQIPG42T6eY3LUEmXzVEndHjKKEx.Crk9";
+$Lightning.use("c:LightningOUTApp",function(){
+$Lightning.createComponent("c:LightningOutCmp",
+"{}",
+"divToSHow",
+function(cmp){
+});
+}url, token);
+alert("Called Salesforce");
+}
+</script>
+
+</head>
+<body onLoad="loadLightning();">
+
+
+
+<B> Welcome to Lightning OUT!!!!!!</B>
+<div id="divToSHow"></div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="536.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.code.FetchMetadataController">
+   <children>
+      <Label layoutX="56.0" layoutY="81.0" prefHeight="17.0" prefWidth="115.0" text="URL :" />
+      <Label layoutX="56.0" layoutY="141.0" prefHeight="17.0" prefWidth="115.0" text="User Name :" />
+      <Label layoutX="56.0" layoutY="205.0" prefHeight="17.0" prefWidth="115.0" text="Password :" />
+      <ChoiceBox fx:id="urlFX" layoutX="133.0" layoutY="80.0" prefWidth="150.0" />
+      <TextField fx:id="userNameFX" layoutX="131.0" layoutY="140.0" />
+      <PasswordField fx:id="passwordFX" layoutX="133.0" layoutY="204.0" />
+      <Button layoutX="125.0" layoutY="267.0" mnemonicParsing="false" onAction="#fetchAll" text="Fetch Metadata" />
+      <Button layoutX="281.0" layoutY="267.0" mnemonicParsing="false" text="Go To Main Menu" />
+      <TextArea fx:id="consoleOPFX" layoutX="29.0" layoutY="329.0" prefHeight="200.0" prefWidth="557.0" />
+      <ProgressIndicator fx:id="fetchAllProgFX" layoutX="308.0" layoutY="184.0" progress="0.0" />
+   </children>
+</AnchorPane>
+
